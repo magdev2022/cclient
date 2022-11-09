@@ -1,4 +1,4 @@
-module client
+module github.com/magdev2022/cclient
 
 go 1.19
 

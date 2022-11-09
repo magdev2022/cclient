@@ -13,7 +13,7 @@
 // limitations under the License.
 
 // stolen from https://github.com/caddyserver/forwardproxy/blob/master/httpclient/httpclient.go
-package cclient
+package main
 
 import (
 	"bufio"
@@ -21,12 +21,13 @@ import (
 	"crypto/tls"
 	"encoding/base64"
 	"errors"
-	"golang.org/x/net/proxy"
 	"io"
 	"net"
 	"net/http"
 	"net/url"
 	"sync"
+
+	"golang.org/x/net/proxy"
 
 	"golang.org/x/net/http2"
 )

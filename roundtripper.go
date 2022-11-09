@@ -1,4 +1,4 @@
-package cclient
+package main
 
 import (
 	"context"
@@ -21,7 +21,7 @@ var errProtocolNegotiated = errors.New("protocol negotiated")
 type roundTripper struct {
 	sync.Mutex
 
-	clientHelloId     utls.ClientHelloID
+	clientHelloId utls.ClientHelloID
 
 	cachedConnections map[string]net.Conn
 	cachedTransports  map[string]http.RoundTripper

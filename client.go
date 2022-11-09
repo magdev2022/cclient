@@ -1,4 +1,4 @@
-package cclient
+package main
 
 import (
 	"net/http"
